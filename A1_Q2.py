@@ -34,9 +34,9 @@ with open(filename, 'w', newline='') as csvfile:
 
 # Open the file and display the content line by line
 with open(filename, mode='r') as file:
-    reader = csv.reader(file)
+    csvreader = csv.reader(file)
 
-    for row in reader:
+    for row in csvreader:
         print(','.join(row))
 
 
